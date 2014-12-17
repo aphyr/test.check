@@ -13,7 +13,7 @@
   (:import [java.nio ByteBuffer]
            [java.util Arrays]
            [javax.crypto Cipher]
-           [javax.crypto.spec SecretKeySpec]))
+           [clojure.test.check SecretKeySpec]))
 
 (defprotocol IRandom
   (split [random]
