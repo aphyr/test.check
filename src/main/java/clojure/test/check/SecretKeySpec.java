@@ -97,7 +97,7 @@ public class SecretKeySpec implements KeySpec, SecretKey {
         if (key.length == 0) {
             throw new IllegalArgumentException("Empty key");
         }
-        this.key = key.clone();
+        this.key = key;
         this.algorithm = algorithm;
     }
 
